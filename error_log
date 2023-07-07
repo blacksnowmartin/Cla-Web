@@ -1,0 +1,30 @@
+[21-Jun-2023 03:04:58 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'blacksnow'@'192.185.183.237' (using password: YES) in /home2/tukitcla/public_html/bsmartin/messages.php:9
+Stack trace:
+#0 /home2/tukitcla/public_html/bsmartin/messages.php(9): mysqli->__construct('tukit-class.co....', 'blacksnow', 'Martin2003$', 'tukit-cla_clash...')
+#1 {main}
+  thrown in /home2/tukitcla/public_html/bsmartin/messages.php on line 9
+[21-Jun-2023 03:26:10 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'blacksnow'@'localhost' (using password: YES) in /home2/tukitcla/public_html/bsmartin/messages.php:9
+Stack trace:
+#0 /home2/tukitcla/public_html/bsmartin/messages.php(9): mysqli->__construct('localhost:3306', 'blacksnow', 'Martin2003$', 'tukitcla_clasho...')
+#1 {main}
+  thrown in /home2/tukitcla/public_html/bsmartin/messages.php on line 9
+[21-Jun-2023 03:26:55 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'blacksnow'@'localhost' (using password: YES) in /home2/tukitcla/public_html/bsmartin/messages.php:9
+Stack trace:
+#0 /home2/tukitcla/public_html/bsmartin/messages.php(9): mysqli->__construct('localhost:3306', 'blacksnow', 'Martin2003$', 'tukitcla_clasho...')
+#1 {main}
+  thrown in /home2/tukitcla/public_html/bsmartin/messages.php on line 9
+[21-Jun-2023 03:27:46 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'blacksnow'@'localhost' (using password: YES) in /home2/tukitcla/public_html/bsmartin/messages.php:9
+Stack trace:
+#0 /home2/tukitcla/public_html/bsmartin/messages.php(9): mysqli->__construct('localhost:3306', 'blacksnow', 'Martin2003$', 'tukitcla_clasho...')
+#1 {main}
+  thrown in /home2/tukitcla/public_html/bsmartin/messages.php on line 9
+[21-Jun-2023 04:15:40 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'blacksnow'@'localhost' (using password: YES) in /home2/tukitcla/public_html/bsmartin/login.php:9
+Stack trace:
+#0 /home2/tukitcla/public_html/bsmartin/login.php(9): mysqli->__construct('localhost:3306', 'blacksnow', 'Martin2003$', 'tukitcla_clasho...')
+#1 {main}
+  thrown in /home2/tukitcla/public_html/bsmartin/login.php on line 9
+[21-Jun-2023 06:51:00 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'blacksnow'@'localhost' (using password: YES) in /home2/tukitcla/public_html/bsmartin/login.php:9
+Stack trace:
+#0 /home2/tukitcla/public_html/bsmartin/login.php(9): mysqli->__construct('localhost:3306', 'blacksnow', 'Martin2003$', 'tukitcla_clasho...')
+#1 {main}
+  thrown in /home2/tukitcla/public_html/bsmartin/login.php on line 9
