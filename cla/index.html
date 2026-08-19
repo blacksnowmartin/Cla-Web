@@ -8,12 +8,9 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <!-- mobile metas -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>cla</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
+      <title>CLA Digital | Computers, laptops and accessories</title>
+      <meta name="description" content="Shop reliable computers, laptops, and accessories from CLA Digital.">
       <!-- bootstrap css -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <!-- style css -->
@@ -117,7 +114,7 @@
                                  <span>Computer And Laptop</span>
                                  <h1>Accessories</h1>
                                  <p> Welcome to CLA, your ultimate source for top-quality computers, laptops, and accessories, delivering innovation and exceptional customer service </p>
-                                 <a href="laptop1.html">Buy Now </a> <a href="contact.html">Contact </a>
+                                 <a href="product.html">Shop products</a> <a href="contact.html">Contact</a>
                               </div>
                            </div>
                            <div class="col-md-6">
@@ -443,19 +440,19 @@
             </div>
             <div class="row">
                <div class="col-md-10 offset-md-1">
-                  <form id="request" class="main_form" action="messages.php" method="POST">
+                  <form id="request" class="main_form" action="contact.php" method="POST">
                      <div class="row">
                         <div class="col-md-12 ">
-                           <input class="contactus" placeholder="Name" type="type" name="Name"> 
+                           <input class="contactus" placeholder="Name" type="text" name="name" required>
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Email" type="type" name="Email"> 
+                           <input class="contactus" placeholder="Email address" type="email" name="email" required>
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone Number" type="type" name="Phone_Number">                          
+                           <input class="contactus" placeholder="Phone number" type="tel" name="phone" maxlength="40">
                         </div>
                         <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="type" name="message">Message </textarea>
+                           <textarea class="textarea" placeholder="Message" name="message" maxlength="5000" required></textarea>
                         </div>
                         <div class="col-md-12">
                            <button class="send_btn">Send</button>

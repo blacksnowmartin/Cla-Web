@@ -6,12 +6,9 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <!-- mobile metas -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>cla</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
+      <title>Contact CLA Digital</title>
+      <meta name="description" content="Contact CLA Digital for computers, laptops, accessories, and support.">
       <!-- bootstrap css -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <!-- style css -->
@@ -109,17 +106,22 @@
                <div class="col-md-10 offset-md-1">
                   <form id="request" class="main_form" method="POST" action="contact.php">
                      <div class="row">
+                        <div class="col-md-12"><div class="form_status" data-form-status role="status" aria-live="polite"></div></div>
                         <div class="col-md-12 ">
-                           <input class="contactus" placeholder="Name" type="text" name="Name"> 
+                           <label class="sr-only" for="contact-name">Name</label>
+                           <input id="contact-name" class="contactus" placeholder="Name" type="text" name="name" autocomplete="name" maxlength="255" required>
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Email" type="email" name="Email"> 
+                           <label class="sr-only" for="contact-email">Email address</label>
+                           <input id="contact-email" class="contactus" placeholder="Email address" type="email" name="email" autocomplete="email" maxlength="255" required>
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone Number" type="text" name="Phone Number">                          
+                           <label class="sr-only" for="contact-phone">Phone number</label>
+                           <input id="contact-phone" class="contactus" placeholder="Phone number" type="tel" name="phone" autocomplete="tel" maxlength="40">
                         </div>
                         <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" name="Message"></textarea>
+                           <label class="sr-only" for="contact-message">Message</label>
+                           <textarea id="contact-message" class="textarea" placeholder="Message" name="message" maxlength="5000" required></textarea>
                         </div>
                         <div class="col-md-12">
                            <button type="submit" class="send_btn">Send</button>
@@ -185,7 +187,6 @@
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>

@@ -1,15 +1,29 @@
 <?php
-// Database configuration
-$host = 'localhost';
-$user = 'root'; // Change to your database username
-$pass = ''; // Change to your database password
-$db = 'cla_db';
+declare(strict_types=1);
 
-// Create connection
-$conn = new mysqli($host, $user, $pass, $db);
+// Keep local defaults for development; production deployments should provide environment variables.
+$host = getenv('CLA_DB_HOST') ?: 'localhost';
+$user = getenv('CLA_DB_USER') ?: 'root';
+$pass = getenv('CLA_DB_PASSWORD') ?: '';
+$db = getenv('CLA_DB_NAME') ?: 'cla_db';
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
+try {
+    $conn = new mysqli($host, $user, $pass, $db);
+    $conn->set_charset('utf8mb4');
+} catch (mysqli_sql_exception $exception) {
+    error_log($exception->getMessage());
+    http_response_code(503);
+    exit('The service is temporarily unavailable. Please try again later.');
+}
+
+if (session_status() === PHP_SESSION_NONE) {
+    session_set_cookie_params([
+        'httponly' => true,
+        'samesite' => 'Lax',
+        'secure' => !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off',
+    ]);
+    session_start();
 }
 ?>

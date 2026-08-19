@@ -4,10 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <title>Login - cla</title> <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Sign in | CLA Digital</title>
+    <meta name="description" content="Sign in to your CLA Digital account.">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -71,11 +69,14 @@
             </div>
             <div class="row">
                 <div class="col-md-6 offset-md-3"> <form id="login_form" class="main_form" method="POST" action="login.php"> <div class="row">
+                            <div class="col-md-12"><div class="form_status" data-form-status role="status" aria-live="polite"></div></div>
                             <div class="col-md-12">
-                                <input class="contactus" placeholder="Username" type="text" name="username" required>
+                                <label class="sr-only" for="login-email">Email address</label>
+                                <input id="login-email" class="contactus" placeholder="Email address" type="email" name="username" autocomplete="email" maxlength="255" required>
                             </div>
                             <div class="col-md-12">
-                                <input class="contactus" placeholder="Password" type="password" name="password" required>
+                                <label class="sr-only" for="login-password">Password</label>
+                                <input id="login-password" class="contactus" placeholder="Password" type="password" name="password" autocomplete="current-password" maxlength="255" required>
                             </div>
                             <div class="col-md-12">
                                 <button type="submit" class="send_btn">Login</button>
@@ -142,7 +143,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
 </body>

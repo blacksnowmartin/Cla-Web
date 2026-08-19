@@ -1082,3 +1082,56 @@ ul.social_icon li a:hover {
 
 /** end laptop **/
 
+/* Accessibility and resilient media defaults */
+:focus-visible {
+     outline: 3px solid #51fe44;
+     outline-offset: 3px;
+}
+
+.form_status {
+     display: none;
+     width: 100%;
+     margin-bottom: 18px;
+     padding: 12px 16px;
+     border-left: 4px solid #38c8a8;
+     background: #eafaf5;
+     color: #173b32;
+     font-size: 14px;
+     line-height: 1.5;
+}
+
+.form_status.is-visible {
+     display: block;
+}
+
+.form_status.is-error {
+     border-left-color: #c0392b;
+     background: #fff0ee;
+     color: #6e2118;
+}
+
+button,
+a,
+input,
+textarea {
+     min-height: 44px;
+}
+
+img {
+     aspect-ratio: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+     html {
+          scroll-behavior: auto;
+     }
+
+     *,
+     *::before,
+     *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+     }
+}
+

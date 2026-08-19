@@ -4,10 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <title>Sign Up - cla</title> <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Create an account | CLA Digital</title>
+    <meta name="description" content="Create a CLA Digital account to shop computers, laptops, and accessories.">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -71,17 +69,22 @@
             </div>
             <div class="row">
                 <div class="col-md-6 offset-md-3"> <form id="signup_form" class="main_form" method="POST" action="signup.php"> <div class="row">
+                            <div class="col-md-12"><div class="form_status" data-form-status role="status" aria-live="polite"></div></div>
                             <div class="col-md-12">
-                                <input class="contactus" placeholder="Full Name" type="text" name="fullname" required>
+                                <label class="sr-only" for="signup-name">Full name</label>
+                                <input id="signup-name" class="contactus" placeholder="Full name" type="text" name="fullname" autocomplete="name" maxlength="255" required>
                             </div>
                             <div class="col-md-12">
-                                <input class="contactus" placeholder="Email" type="email" name="email" required>
+                                <label class="sr-only" for="signup-email">Email address</label>
+                                <input id="signup-email" class="contactus" placeholder="Email address" type="email" name="email" autocomplete="email" maxlength="255" required>
                             </div>
                             <div class="col-md-12">
-                                <input class="contactus" placeholder="Password" type="password" name="password" required>
+                                <label class="sr-only" for="signup-password">Password</label>
+                                <input id="signup-password" class="contactus" placeholder="Password (8+ characters)" type="password" name="password" autocomplete="new-password" minlength="8" maxlength="255" required>
                             </div>
                             <div class="col-md-12">
-                                <input class="contactus" placeholder="Confirm Password" type="password" name="confirm_password" required>
+                                <label class="sr-only" for="signup-confirm-password">Confirm password</label>
+                                <input id="signup-confirm-password" class="contactus" placeholder="Confirm password" type="password" name="confirm_password" autocomplete="new-password" minlength="8" maxlength="255" required>
                             </div>
                             <div class="col-md-12">
                                 <button type="submit" class="send_btn">Sign Up</button>
@@ -148,7 +151,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
