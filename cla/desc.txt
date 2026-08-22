@@ -16,3 +16,30 @@ KShs120,000 KShs110,000 images/Acer-Aspire-TC.png
 ASUS ROG Strix GL10CS Gaming Desktop – Intel Core i5-9400F, 8GB RAM, 256GB SSD + 1TB HDD, NVIDIA GTX 1660, Windows 10
 KShs130,000 KShs120,000 images/ASUS-ROG-Strix-GL10CS.png
 
+HP EliteDesk 800 G6 Desktop PC – Intel Core i5-10500, 8GB RAM, 512GB SSD, Windows 10 Pro, 22-inch Monitor
+KShs98,000 KShs88,000 images/HP-EliteDesk-800-G6.png
+
+Lenovo ThinkCentre M720s Desktop – Intel Core i5-8500, 8GB RAM, 1TB HDD, Windows 10 Pro, 21.5-inch Monitor
+KShs82,000 KShs72,000 images/Lenovo-ThinkCentre-M720s.png
+
+Dell OptiPlex 7090 Desktop – Intel Core i7-11700, 16GB RAM, 512GB SSD, Windows 11 Pro, 24-inch Monitor
+KShs135,000 KShs122,000 images/Dell-OptiPlex-7090.png
+
+Acer Veriton X Desktop – Intel Core i5-10400, 8GB RAM, 256GB SSD, Windows 10 Pro, 22-inch Monitor
+KShs90,000 KShs79,000 images/Acer-Veriton-X.png
+
+ASUS ExpertCenter D5 Desktop – Intel Core i5-12400, 8GB RAM, 512GB SSD, Windows 11 Pro, 23.8-inch Monitor
+KShs125,000 KShs112,000 images/ASUS-ExpertCenter-D5.png
+
+HP Pavilion Gaming Desktop – AMD Ryzen 5 5600G, 16GB RAM, 512GB SSD, NVIDIA GTX 1650, Windows 11
+KShs145,000 KShs130,000 images/HP-Pavilion-Gaming.png
+
+Dell Inspiron 3910 Desktop – Intel Core i5-12400, 8GB RAM, 512GB SSD, Windows 11, 23-inch Monitor
+KShs115,000 KShs102,000 images/Dell-Inspiron-3910.png
+
+Lenovo IdeaCentre 3 Desktop – Intel Core i3-12100, 8GB RAM, 256GB SSD, Windows 11, 21.5-inch Monitor
+KShs85,000 KShs74,000 images/Lenovo-IdeaCentre-3.png
+
+HP ProDesk 600 G5 Desktop – Intel Core i5-9500, 8GB RAM, 256GB SSD, Windows 10 Pro, 22-inch Monitor
+KShs78,000 KShs68,000 images/HP-ProDesk-600-G5.png
+
